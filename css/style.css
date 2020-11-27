@@ -83,14 +83,18 @@ body {
 
 .sidebar {
   background-color: var(--Grey-dark-1);
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .flights-view {
   background-color: orangered;
+  height: 80rem;
   flex: 1; }
 
 .logo {
-  margin-left: 3rem;
+  margin-left: 2rem;
   display: flex;
   align-self: stretch;
   align-items: center; }
@@ -142,3 +146,49 @@ body {
   .user-nav__user-name {
     font-size: 1.3rem;
     font-weight: 400; }
+
+.side-nav {
+  font-size: 1.4rem;
+  font-weight: 600;
+  list-style: none;
+  margin-top: 3.5rem; }
+  .side-nav__item {
+    position: relative; }
+    .side-nav__item:not(:last-child) {
+      margin-bottom: .5rem; }
+  .side-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-accent-dark);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.2s, width cubic-bezier(0.71, 0.01, 0.21, 0.99) 0.4s, background-color 0.1s; }
+  .side-nav__item:hover::before, .side-nav__item--active::before {
+    transform: scaleY(1);
+    width: 100%; }
+  .side-nav__item:active::before {
+    background-color: var(--color-grad-1); }
+  .side-nav__link:link, .side-nav__link:visited {
+    color: var(--Grey-light-1);
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10; }
+  .side-nav__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 2rem;
+    fill: currentColor; }
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--Grey-light-4);
+  text-align: center;
+  padding: 2.5rem; }
