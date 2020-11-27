@@ -10,6 +10,10 @@
     background-color: var(--color-primary-dark);
     border-bottom: var(--Grey-light-2);
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .content {
     display: flex;
