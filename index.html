@@ -8,8 +8,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/Wingly.png">
+        <style>
+            input[type=text], select {
+                width: 100%;
+                padding: 1.2rem 2rem;
+                margin: 1.5rem, 0;
+                display:  inline-block;
+                
+                border-radius: 4px;
+                
+            }
+            input[type=submit] {
+                width: 100%;
+                background-color: #FFC107;
+                color: #fff;
+                padding: 1.4rem 2rem;
+                margin: 1.5rem 0;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
         
         <title>Wingly &mdash; Flight booking app</title>
+        
     </head>
     <body>
         <div class="container">
@@ -52,7 +74,7 @@
                             </a>
                         </li>
                         <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
+                            <a href="schedules.html" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href = "img/sprite.svg#icon-aircraft-take-off"></use>
                                 </svg>
@@ -88,19 +110,49 @@
                     </div>
                     <div class="details">
                         <div class="description">
+                            <h1>Paragraphs</h1>
                             <p class="paragraph">
                                 <span style="color: #FFC107;">Wingly</span> is a fictional flight booking\searching app made for a WTL assignment using FlexBox with <span style="color: #c69;">Sass</span> (a preprocessor for CSS) with <span style="color: #3C873A;">npm</span> Scripts for automating tasks.
                             </p>
                             <p class="paragraph">
                                 I have used inline styles for using a different colors in the text <span style="color: #F37335;">like this</span>. I have also incorporated the BEM methodology to improve the nesting of style rules in Sass and to also improve the quality of code in general. I had planned to use Sass variables to store some custom values but, I discovered later that CSS has its own support for variables(Custom properties) the var() CSS function. I have also made some subtle hover animations for the sidebar navigation using scaleY() and applying cubic bezier on it to add a delay. 
                             </p>
+                            
                             <ul class="list">
+                                <h1>List</h1>
                                 <li class="list-item">Easy to use</li>
                                 <li class="list-item">1000+ Flights</li>
                                 <li class="list-item">Tours</li>
                                 <li class="list-item">Cheapest Airfares</li>
                                                                 
                             </ul>
+                            <h1>Links to other pages</h1>
+                            <a href="https://www.tourismthailand.org/" target="_blank">
+                                <h2>Thailand tourism</h2>
+                            </a>
+                            <a href="https://www.visitsingapore.com/en_in/" target="_blank">
+                                <h2>Singapore tourism</h2>
+                            </a>
+                            <a href="https://www.visitmorocco.com/en" target="_blank">
+                                <h2>Morocco tourism</h2>
+                            </a>
+                            <h1>Form</h1>
+                            <form action="#">
+                                <label for="fname">First Name</label>
+                                <input type="text" class="fname" name="firstname" placeholder="Your name..">
+                            
+                                <label for="lname">Last Name</label>
+                                <input type="text" class="lname" name="lastname" placeholder="Your last name..">
+                            
+                                <label for="country">Country you wish to visit</label>
+                                <select class="country" name="country">
+                                  <option value="australia">Thailand</option>
+                                  <option value="canada">Singapore</option>
+                                  <option value="usa">Morocco</option>
+                                </select>
+                              
+                                <input type="submit" value="Submit">
+                              </form>
                         </div>
                         <div class="flights">
                             <div class="flights__card-1">

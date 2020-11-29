@@ -136,6 +136,21 @@ body {
     position: relative;
     border-bottom: 1px solid var(--Grey-light-2); }
 
+.details-schedules {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--Grey-light-1);
+  border-bottom: 1px solid var(--Grey-light-2); }
+
+.description-schedules {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-text-pri);
+  background-color: #ffffff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  flex: 1; }
+
 .logo {
   margin-left: 2rem;
   display: flex;
@@ -253,6 +268,27 @@ body {
     left: 3%;
     line-height: 1.3; }
     .masthead__text > span {
+      display: block;
+      text-align: left; }
+
+.masthead-schedules {
+  width: 100%;
+  height: 30rem;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/schedules.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--Grey-light-2);
+  position: relative; }
+  .masthead-schedules__text {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: left;
+    position: absolute;
+    top: 36%;
+    left: 3%;
+    line-height: 1.3; }
+    .masthead-schedules__text > span {
       display: block;
       text-align: left; }
 
